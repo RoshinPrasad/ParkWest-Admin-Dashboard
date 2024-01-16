@@ -14,6 +14,19 @@
       font-size: 20px;
       font-weight: bold;
       color: #6439ff;
+
+      position: relative;
+      transition: transform 0.3s ease-in-out;
+      animation: jiggleLogo 1s infinite alternate;
+
+      @keyframes jiggleLogo {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-5px);
+        }
+      }
     }
   }
 
@@ -46,6 +59,9 @@
 
         &:hover {
           background-color: #ece8ff;
+          .logo {
+            animation: none; // Disable logo animation on hover
+          }
         }
 
         .icon {
