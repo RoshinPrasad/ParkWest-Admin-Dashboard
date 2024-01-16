@@ -65,7 +65,7 @@ const Sidebar = () => {
           <p className="title">SERVICE</p>
           <li>
             <SettingsSystemDaydreamOutlinedIcon className="icon" />
-            <span>System Health</span>
+            <span>Inventory Strength</span>
           </li>
           <li>
             <PsychologyOutlinedIcon className="icon" />
